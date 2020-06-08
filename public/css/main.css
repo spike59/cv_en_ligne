@@ -1,8 +1,7 @@
 /* charte graphique 
 
-le vert clair   cdd24d
-le vert foncé   61ae3f
-le bleu         2215c9
+le vert clair   c7ffcd
+le bleu clair   d0ddff
 
 police generale
 font-family: 'Merienda', cursive;
@@ -17,6 +16,8 @@ font-family: 'Shadows Into Light', cursive;
 
 */
 
+
+/* ### pour la page */
 * {
     box-sizing: border-box;
 }
@@ -29,165 +30,157 @@ body {
 .container {
     max-width:1199px;
     margin:auto;
-    width:100%;
-
-    
+    width:100%;  
     z-index:100;
     padding:1rem;
 }
 
+/* ### Navigation */
 nav {
-    height:3rem;
+    /*height:3rem;*/
     background-color:black;
-}
-
-
-#infos {
-    color: black;
-    background-color: #cdd24d;
+    vertical-align: center;
+    color:white;
     display:flex;
-    
+}
+nav a {
+    color:white;
+    /*font-size:2rem;*/
+}
+nav a, nav p {
+    padding-left:1rem;
+    padding-right:1rem;
+}
+nav i {
+    font-size:2rem;
+}
+nav a {
+    text-decoration:none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav .container div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+/* ### haut de page infos et titre */
+#infos {
+    display:flex;
 }
 #infos .container {
     display:flex;
     justify-content:space-between;  
 }
 #adresse {
+    flex-basis:40%;
     padding:1rem;
 }
-
+#adresse a {
+    font-size:3rem;
+}
 #titre {
-    font-family: 'Share Tech Mono', monospace;    
-    color:#2215c9;
+
     text-align:center;
+    /*margin:auto;*/
+    margin-top:auto;
+    margin-bottom:auto;
+    flex-basis:50%;
 }
 
 #titre h1 {
     font-size:2rem;
 }
 
-#titre a {
-    font-size:3rem;
-}
+
+/* ### encart savoirs etres */
 #perso_box {
     position:relative; 
 }
 #perso_box .container {
-    justify-content:space-between;
+    justify-content:flex-end;
     display:flex;
-}
-
-.clip_div {
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
-    width:100%;
-    height:100%;
-    position:absolute;
-    background-color: #cdd24d;
-    top:0;
-    z-index:-10;
-}
-
-#diplomes {
-    padding:1rem;
-    flex-basis:40%;
-}
-#diplomes p{
-    display:inline-block;
-    padding:1rem;
-    border:solid black 3px;
-    background-color:white;
 }
 
 #savoirs-etre {
-    color: #cdd24d;
     font-size:1.5rem;
     padding:1rem;
-    display:inline-block;
-    margin-top:5rem;
-    
-    /*background-color:white;*/
+}
+#savoirs-etre ul {
+    display:flex;
+
 }
 #savoirs-etre li {
+    padding:0.5rem;
     list-style:none;
 }
 
-
+/* ### encart competences */
 #competences_box {
-    position:relative;
-    color: white;
-    background-color: #2215c9;
-   
+ 
 }
 
-#competences_box h1 {
-    padding:1rem;
-}
 #comps {
-    padding:1rem;
+    background-color: #d0ddff;
+    border-radius:5px;
+    padding:2rem;
+
+}
+#sub_comps {
     display:flex;
-    justify-content:space-evenly;
-   flex-wrap:wrap;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap:wrap;
 }
-
-#clip2 {
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    width:100%;
-    height:20%;
-    position:absolute;
-    background-color: #2215c9;
-    top:-20%;
-    z-index:-5;    
+.sub_comp {
+    /*margin-left:0;*/
+    /*flex-basis:50%;*/
 }
-
-
-#experiences_box {
-    background-color:#cdd24d;
-    position:relative; 
-}
-
-#clip3 {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%);
-
-
-
-    width:100%;
-    height:20%;
-    position:absolute;
-    background-color: #2215c9;
-    top:99%;
-    z-index:1;    
-}
-#loisirs {
-    color:#cdd24d;
-    font-family: 'Shadows Into Light', cursive;
-}
-#clip4 {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%);
-
-
-
-    width:100%;
-    height:20%;
-    position:absolute;
-    background-color: #cdd24d;
-    top:99%;
-    z-index:1;    
-}
-
 .skills {
-    flex-basis:25%;
+    /*width:100%;*/
 }
 
 .skills ul {
     list-style:none;
+    padding-inline-start:0;
 }
 
-.blue {
-    color:#2215c9;
-}
+/* ### encart experiences */
 
-#antibugwrap0 {
-    position:relative;
-    /*background-color: #cdd24d;*/
-    height:5rem;
+#experiences_box {
+
+}
+#experiences_content {
+    border-radius:5px;
+    padding:2rem;
+    background-color:#c7ffcd;
+    margin:auto;
+}
+#experiences_content ul li{
+    list-style: none;
+}
+/* ### encart loisirs */
+#loisirs_box {
+
+}
+#loisirs_content {
+    border: black solid 1px;
+    border-radius:5px;
+    padding:1rem;
+}
+#loisirs_content ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+#loisirs_content ul li{
+    display:inline-block;
+    list-style: none;
+    padding:0.5rem;
 }
