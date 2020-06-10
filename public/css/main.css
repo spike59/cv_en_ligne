@@ -135,9 +135,14 @@ nav .container div{
 }
 #sub_comps {
     display:flex;
+    flex-direction:column;
     justify-content:space-around;
-    text-align: center;
+    text-align: flex-start;
     flex-wrap:wrap;
+    padding-left:1rem;
+}
+#sub_comps p {
+    padding-left:1rem;
 }
 .sub_comp {
     /*margin-left:0;*/
@@ -162,6 +167,10 @@ nav .container div{
     padding:2rem;
     background-color:#c7ffcd;
     margin:auto;
+    
+}
+#experiences_content div{ 
+    padding:1rem;
 }
 #experiences_content ul li{
     list-style: none;
@@ -173,7 +182,7 @@ nav .container div{
 #loisirs_content {
     border: black solid 1px;
     border-radius:5px;
-    padding:1rem;
+    padding:2rem;
 }
 #loisirs_content ul{
     display:flex;
