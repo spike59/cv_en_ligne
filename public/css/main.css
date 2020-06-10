@@ -83,9 +83,10 @@ nav .container div{
     flex-basis:40%;
     padding:1rem;
 }
-#adresse a {
+#adresse a{
     font-size:3rem;
 }
+
 #titre {
 
     text-align:center;
