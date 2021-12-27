@@ -1,0 +1,41 @@
+$bps: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+@mixin reset_bp()
+{
+    @each $bp,$size in $bps {
+        $name:#{'#bp-' + $bp};
+        #{$name} {
+            color:black;
+            font-weight: none;
+        }
+    }
+}
+
+/* css pour test */
+@include reset_bp();
+
+/*css pour ecran */
+@media screen  {
+    @each $bp,$size in $bps{
+
+        @media (min-width : $size)
+        {
+            @include reset_bp();
+            /*en gras pr le bp courant */
+            $name:#{'#bp-' + $bp};
+            #{$name} {
+                color:red;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+

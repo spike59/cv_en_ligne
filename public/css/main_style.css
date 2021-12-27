@@ -1,3 +1,227 @@
+/* css pour test */
+#bp-xs {
+  color: black;
+  font-weight: none;
+}
+
+#bp-sm {
+  color: black;
+  font-weight: none;
+}
+
+#bp-md {
+  color: black;
+  font-weight: none;
+}
+
+#bp-lg {
+  color: black;
+  font-weight: none;
+}
+
+#bp-xl {
+  color: black;
+  font-weight: none;
+}
+
+#bp-xxl {
+  color: black;
+  font-weight: none;
+}
+
+/*css pour ecran */
+@media screen and (min-width: 0) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-xs {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-sm {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-md {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-lg {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-xl {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #bp-xs {
+    color: black;
+    font-weight: none;
+  }
+  #bp-sm {
+    color: black;
+    font-weight: none;
+  }
+  #bp-md {
+    color: black;
+    font-weight: none;
+  }
+  #bp-lg {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xl {
+    color: black;
+    font-weight: none;
+  }
+  #bp-xxl {
+    color: black;
+    font-weight: none;
+  }
+  /*en gras pr le bp courant */
+  #bp-xxl {
+    color: red;
+    font-weight: bold;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
