@@ -1,0 +1,121 @@
+$headers: (
+    burger: 0,
+    large: 576
+);
+
+header {
+    background-color: grey;
+    #logo {
+        text-align:center;
+    }
+    #menu {
+        ul {
+            list-style-type: none;
+            margin-block-start:0;
+            padding-inline-start:0;
+        }
+    }
+}
+
+@mixin menu($name){
+    @if $name == 'burger'{
+        @include menu-burger()
+    }
+    @else{
+        @include menu-large()
+    }
+}
+
+@mixin menu-burger {
+    nav 
+    {
+        #logo {
+            display:flex;
+            height:60px;
+            width:100%;
+            padding-left: 20%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu {
+            display:none;
+        
+            ul {
+
+                background-color: yellow;
+                width:100%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                li a {
+                    text-align: center;;
+                    font-size:40px;
+                    text-decoration: none;
+                    color:black;
+                    display:block;
+                    width:100%;
+                }
+                li a:hover {
+                    border :5px solid black;
+                    border-radius: 5%;
+                    font-size:50px;
+                }
+
+            }
+    }
+        #burger {
+            display:flex;
+            width:20%;
+            height:60px;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            position:absolute;
+            top:0;
+            left:0;
+            cursor:pointer;
+        }
+    }
+}
+
+@mixin menu-large {
+    nav {
+        #logo {
+            height:auto;
+            padding:0;
+        }
+        #burger {
+            display:none;
+        }
+        #menu {
+            display: block;
+            ul {
+                display:flex;
+                flex-direction: row;
+                // list-style-type: none;
+                justify-content:space-evenly;
+                // width:100%;
+                // margin-block-start:0;
+                // padding-inline-start:0;
+            }
+        }
+
+    }
+
+}
+/*css pour ecran */
+header {
+    @media screen  {
+        @each $menu,$size in $headers{
+
+            @media (min-width : #{$size+'px'} )
+            {
+            
+                @include menu($menu)
+            
+            }
+        }
+
+    }
+}

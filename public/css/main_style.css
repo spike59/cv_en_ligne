@@ -228,6 +228,113 @@
           box-sizing: border-box;
 }
 
+header {
+  background-color: grey;
+}
+
+header #logo {
+  text-align: center;
+}
+
+header #menu ul {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+/*css pour ecran */
+@media screen and (min-width: 0px) {
+  header nav #logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    padding-left: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav #menu {
+    display: none;
+  }
+  header nav #menu ul {
+    background-color: yellow;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav #menu ul li a {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+  }
+  header nav #menu ul li a:hover {
+    border: 5px solid black;
+    border-radius: 5%;
+    font-size: 50px;
+  }
+  header nav #burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20%;
+    height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header nav #logo {
+    height: auto;
+    padding: 0;
+  }
+  header nav #burger {
+    display: none;
+  }
+  header nav #menu {
+    display: block;
+  }
+  header nav #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 header h1 {
   background-color: blue;
 }
