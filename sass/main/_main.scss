@@ -6,58 +6,58 @@ $bps: (xs: 0,
   xxl: 1400px
 );
 
-@mixin skills-xs(){
+@mixin main-xs(){
 
 }
-@mixin skills-sm(){
+@mixin main-sm(){
 
 }
-@mixin skills-md(){
+@mixin main-md(){
 
 }
-@mixin skills-lg(){
+@mixin main-lg(){
     margin:auto;
     width:992px;
 }
-@mixin skills-xl(){
+@mixin main-xl(){
 
 }
-@mixin skills-xxl(){
+@mixin main-xxl(){
 
 }
 
 
-@mixin skills($bp)  {
+@mixin main($bp)  {
         @if($bp == 'xs'){
-            @include skills-xs()
+            @include main-xs()
         }
         @if($bp == 'sm'){
-            @include skills-sm()
+            @include main-sm()
         }
         @if($bp == 'md'){
-            @include skills-md()
+            @include main-md()
         }
         @if($bp == 'lg'){
-            @include skills-lg()
+            @include main-lg()
         }
         @if($bp == 'xl'){
-            @include skills-xl()
+            @include main-xl()
         }
         @if($bp == 'xxl'){
-            @include skills-xxl()
+            @include main-xxl()
         }
     }
 
 
 /*css pour ecran */
-.skills {
+main {
     @media screen  {
         @each $name,$size in $bps{
 
             @media (min-width : #{$size} )
             {
             
-                @include skills($name)
+                @include main($name)
             
             }
         }
