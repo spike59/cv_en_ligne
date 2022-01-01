@@ -30,6 +30,14 @@ module.exports = function(grunt) {
                 src: ['src/html/profil_test/_top.html', 'src/html/profil_test/_profil.html', 'src/html/_bot.html'],
                 dest: 'public/dev_tests/profil.html',
             },
+            experience_test: {
+                src: ['src/html/experience/_top.html', 'src/html/experience/_experience.html', 'src/html/_bot.html'],
+                dest: 'public/dev_tests/experience.html',
+            },
+            formation_test: {
+                src: ['src/html/formation/_top.html', 'src/html/formation/_formation.html', 'src/html/_bot.html'],
+                dest: 'public/dev_tests/formation.html',
+            },
         },
     });
 
@@ -60,6 +68,16 @@ module.exports = function(grunt) {
         inFile = grunt.file.read('src/dyn/_top.dyn.html');
         final_html = grunt.template.process(inFile,{data:data});
         grunt.file.write('src/html/profil_test/_top.html',final_html,{encoding:'UTF-8'});
+
+        data = grunt.file.readJSON('src/data/demos/experience.json');
+        inFile = grunt.file.read('src/dyn/_top.dyn.html');
+        final_html = grunt.template.process(inFile,{data:data});
+        grunt.file.write('src/html/experience/_top.html',final_html,{encoding:'UTF-8'});
+
+        data = grunt.file.readJSON('src/data/demos/formation.json');
+        inFile = grunt.file.read('src/dyn/_top.dyn.html');
+        final_html = grunt.template.process(inFile,{data:data});
+        grunt.file.write('src/html/formation/_top.html',final_html,{encoding:'UTF-8'});
     })
     grunt.registerTask('default', ['watch:html']);
     grunt.registerTask('template', ['watch:dyn']);

@@ -407,20 +407,94 @@ header h1 {
             flex-direction: column;
     text-align: center;
   }
-  .profil #profil_name {
-    font-size: 2em;
-  }
-  .profil #avatar {
+  .profil #entete {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 20px;
   }
+  .profil #entete #profil_name {
+    font-size: 2em;
+  }
+  .profil #trait {
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    border-top: 2px solid #000;
+  }
+  .profil #avatar {
+    width: 200px;
+    margin: auto;
+  }
   .profil #avatar img {
+    border-radius: 50%;
+    border: black solid 2px;
     width: 100%;
+  }
+  .profil #profil_data {
+    margin: 20px;
+  }
+  .profil #profil_data #pres h2 {
+    margin-bottom: 10px;
+  }
+  .profil #profil_data #pres p {
+    display: inline-block;
+    text-indent: 1.5em;
+    text-align: left;
+  }
+  .profil #profil_data #profil_infos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px;
+    width: 300px;
+  }
+  .profil #profil_data #profil_infos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .profil #profil_data #profil_infos div i {
+    width: 30px;
+    height: 30px;
+  }
+  .profil #profil_data #profil_infos div p {
+    margin-left: 10px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 576px) {
+  .profil #entete {
+    height: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .profil #avatar {
-    width: 80px;
+    width: 200px;
   }
 }
 /*# sourceMappingURL=main_style.css.map */
