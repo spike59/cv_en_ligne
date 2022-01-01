@@ -1,0 +1,48 @@
+/*css pour exps (experiences) */
+@media screen and (min-width: 0) {
+  .exps {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .exps h2 {
+    display: block;
+  }
+  .exps .exp {
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80px;
+  }
+  .exps .exp h3 {
+    text-align: center;
+    height: 30px;
+  }
+  .exps .exp img {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=exps.css.map */

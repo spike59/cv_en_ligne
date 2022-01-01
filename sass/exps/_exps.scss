@@ -6,22 +6,26 @@ $bps: (xs: 0,
   xxl: 1400px
 );
 
-@mixin formations-xs(){
+@mixin exps-xs(){
     display:flex;
     flex-direction: column;
     width:100%;
+    // margin-left:10%;
     h2 {
         height:30px;
+        // background-color: blue;
+
     }
-    .formation {
+    .exp {
         display:flex;
+
         .content {
             h2 {
                 text-indent:10px;
             }
             p {
                 margin:10px;
-                // text-indent: 5px;
+                text-indent: 5px;
             }
             ul {
                 position:relative;
@@ -29,55 +33,58 @@ $bps: (xs: 0,
             }
         }
     }
-}
-@mixin formations-sm(){
+
+
 
 }
-@mixin formations-md(){
+@mixin exps-sm(){
 
 }
-@mixin formations-lg(){
+@mixin exps-md(){
 
 }
-@mixin formations-xl(){
+@mixin exps-lg(){
 
 }
-@mixin formations-xxl(){
+@mixin exps-xl(){
+
+}
+@mixin exps-xxl(){
 
 }
 
 
-@mixin formations($bp)  {
+@mixin exps($bp)  {
         @if($bp == 'xs'){
-            @include formations-xs()
+            @include exps-xs()
         }
         @if($bp == 'sm'){
-            @include formations-sm()
+            @include exps-sm()
         }
         @if($bp == 'md'){
-            @include formations-md()
+            @include exps-md()
         }
         @if($bp == 'lg'){
-            @include formations-lg()
+            @include exps-lg()
         }
         @if($bp == 'xl'){
-            @include formations-xl()
+            @include exps-xl()
         }
         @if($bp == 'xxl'){
-            @include formations-xxl()
+            @include exps-xxl()
         }
     }
 
 
-/*css pour ecran */
-.formations {
+/*css pour exps (experiences) */
+.exps {
     @media screen  {
         @each $name,$size in $bps{
 
             @media (min-width : #{$size} )
             {
             
-                @include formations($name)
+                @include exps($name)
             
             }
         }

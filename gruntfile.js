@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                 dest: 'public/dev_tests/profil.html',
             },
             experience_test: {
-                src: ['src/html/experience/_top.html', 'src/html/experience/_experience.html', 'src/html/_bot.html'],
+                src: ['src/html/experience/_top.html', 'src/html/experience/_experiences.html', 'src/html/_bot.html'],
                 dest: 'public/dev_tests/experience.html',
             },
             formation_test: {
