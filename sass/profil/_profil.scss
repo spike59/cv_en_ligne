@@ -1,0 +1,81 @@
+$bps: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin profil-xs(){
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    #profil_name {
+        font-size: 2em;;
+    }
+    #profil_title {
+
+    }
+    #avatar {
+        margin:20px;
+        img{
+            width:100%
+        }
+    }
+}
+@mixin profil-sm(){
+    #avatar {
+        width:80px;
+    }
+}
+@mixin profil-md(){
+
+}
+@mixin profil-lg(){
+
+}
+@mixin profil-xl(){
+
+}
+@mixin profil-xxl(){
+
+}
+
+
+@mixin profil($bp)  {
+        @if($bp == 'xs'){
+            @include profil-xs()
+        }
+        @if($bp == 'sm'){
+            @include profil-sm()
+        }
+        @if($bp == 'md'){
+            @include profil-md()
+        }
+        @if($bp == 'lg'){
+            @include profil-lg()
+        }
+        @if($bp == 'xl'){
+            @include profil-xl()
+        }
+        @if($bp == 'xxl'){
+            @include profil-xxl()
+        }
+    }
+
+
+/*css pour ecran */
+.profil {
+    @media screen  {
+        @each $name,$size in $bps{
+
+            @media (min-width : #{$size} )
+            {
+            
+                @include profil($name)
+            
+            }
+        }
+
+    }
+}

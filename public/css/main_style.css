@@ -394,4 +394,33 @@ header h1 {
     height: 60px;
   }
 }
+
+/*css pour ecran */
+@media screen and (min-width: 0) {
+  .profil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .profil #profil_name {
+    font-size: 2em;
+  }
+  .profil #avatar {
+    margin: 20px;
+  }
+  .profil #avatar img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .profil #avatar {
+    width: 80px;
+  }
+}
 /*# sourceMappingURL=main_style.css.map */
