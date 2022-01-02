@@ -1,10 +1,11 @@
 @import 'common/_break_points';
-@import '_all';
+@import 'all';
+@import 'main/main';
 @import 'common/timeline';
-@import 'header/_headers';
-@import 'header/_header';
-@import 'main/_main';
+@import 'header/headers';
+@import 'header/header';
 @import 'technos/technos';
 @import 'profil/profil';
 @import 'exps/exps';
 @import 'formation/formation';
+@import 'loisirs/loisirs';

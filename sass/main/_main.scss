@@ -7,7 +7,14 @@ $bps: (xs: 0,
 );
 
 @mixin main-xs(){
-
+    // width:90%;
+    margin:auto;
+    // display:flex;
+    // flex-direction: column;
+    // justify-content: center;
+    section {
+        width:100%;
+    }
 }
 @mixin main-sm(){
 

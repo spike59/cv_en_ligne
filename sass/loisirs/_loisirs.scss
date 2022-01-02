@@ -1,0 +1,73 @@
+$bps: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin loisirs-xs(){
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    .loisir{
+        // display:block;
+        width:200px;
+    }
+}
+@mixin loisirs-sm(){
+
+}
+@mixin loisirs-md(){
+
+}
+@mixin loisirs-lg(){
+
+}
+@mixin loisirs-xl(){
+
+}
+@mixin loisirs-xxl(){
+
+}
+
+
+@mixin loisirs($bp)  {
+        @if($bp == 'xs'){
+            @include loisirs-xs()
+        }
+        @if($bp == 'sm'){
+            @include loisirs-sm()
+        }
+        @if($bp == 'md'){
+            @include loisirs-md()
+        }
+        @if($bp == 'lg'){
+            @include loisirs-lg()
+        }
+        @if($bp == 'xl'){
+            @include loisirs-xl()
+        }
+        @if($bp == 'xxl'){
+            @include loisirs-xxl()
+        }
+    }
+
+
+/*css pour ecran */
+.loisirs {
+    @media screen  {
+        @each $name,$size in $bps{
+
+            @media (min-width : #{$size} )
+            {
+            
+                @include loisirs($name)
+            
+            }
+        }
+
+    }
+}

@@ -104,7 +104,7 @@ header {
     }
 
 }
-/*css pour ecran */
+/*css header pour ecran */
 header {
     @media screen  {
         @each $menu,$size in $headers{

@@ -68,3 +68,6 @@ node_modules/
 #firebase.json
 #public/fontawesome-free-5.13.0-web
 .vscode
+
+#fichiers temporaires de construction
+src/html/*
