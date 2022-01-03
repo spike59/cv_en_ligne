@@ -228,13 +228,22 @@
           box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
 /*css pour ecran */
 @media screen and (min-width: 0) {
   main {
-    margin: auto;
+    width: 100%;
+    margin: 0;
   }
   main section {
-    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -253,7 +262,7 @@
   border-radius: 50%;
   background-color: red;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .timeline .v_ligne {
@@ -264,12 +273,13 @@
   background-color: black;
   display: block;
   position: relative;
-  top: -15px;
-  z-index: -1;
+  top: -20px;
+  z-index: 1;
 }
 
 header {
   background-color: grey;
+  width: 100%;
 }
 
 header #logo {
@@ -541,6 +551,7 @@ header h1 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin-bottom: 30px;
   }
   .exps h2 {
     height: 30px;
@@ -574,6 +585,7 @@ header h1 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin-bottom: 30px;
   }
   .formations h2 {
     height: 30px;
@@ -615,6 +627,241 @@ header h1 {
   }
   .loisirs .loisir {
     width: 200px;
+  }
+}
+
+@media print {
+  body {
+    position: fixed;
+    top: 0mm;
+    left: 0mm;
+    width: 210mm;
+    height: 297mm;
+    margin: 0mm 0mm 0mm 0mm;
+    padding: 20mm 20mm 20mm 20mm;
+    border: solid green 1px;
+    outline: solid black 1px;
+  }
+  header {
+    display: none;
+  }
+  .profil #avatar {
+    display: block;
+    background-color: white;
+    width: 5cm;
+    height: 5cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profil #avatar img {
+    margin: 0.5cm;
+    width: 4cm;
+    border-radius: 50%;
+  }
+  .profil #entete {
+    padding: 0.3cm;
+    display: block;
+    background-color: white;
+    width: 16cm;
+    height: 5cm;
+    position: absolute;
+    top: 0;
+    left: 5cm;
+    text-align: center;
+  }
+  .profil #entete #profil_name {
+    font-size: 30pt;
+  }
+  .profil #entete .profil_title p {
+    font-size: 25pt;
+  }
+  .profil #profil_data {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 5cm;
+    left: 0;
+    width: 10.5cm;
+    height: 8cm;
+    padding: 0.5cm;
+  }
+  .profil #profil_data #pres h2 {
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    text-align: center;
+  }
+  .profil #profil_data #pres p {
+    text-indent: 20pt;
+    font-size: 15pt;
+  }
+  .profil #profil_data #profil_infos {
+    padding-top: 0.3cm;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 14pt;
+  }
+  .profil #profil_data #profil_infos div i {
+    width: 1cm;
+    text-align: center;
+  }
+  .profil #profil_data #profil_infos div p {
+    display: inline-block;
+  }
+  #technos {
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 10.5cm;
+    height: 8cm;
+    left: 10.5cm;
+    top: 5cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+  }
+  #technos h2 {
+    text-align: center;
+  }
+  #technos .technos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #technos .technos h2 {
+    display: block;
+  }
+  #technos .technos .techno {
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80px;
+  }
+  #technos .technos .techno h3 {
+    text-align: center;
+    height: 30px;
+  }
+  #technos .technos .techno img {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+  }
+  #formation {
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 10.5cm;
+    height: 13cm;
+    left: 0;
+    top: 13cm;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  #formation h1 {
+    text-align: center;
+  }
+  #formation h2 {
+    height: 30px;
+  }
+  #formation .formations {
+    padding-top: 0.5cm;
+  }
+  #formation .formations .formation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #formation .formations .formation .content h2 {
+    text-indent: 10px;
+  }
+  #formation .formations .formation .content p {
+    margin: 10px;
+  }
+  #formation .formations .formation .content ul {
+    position: relative;
+    left: -36px;
+  }
+  #exps {
+    background-color: white;
+    position: absolute;
+    width: 10.5cm;
+    height: 13cm;
+    left: 10.5cm;
+    top: 13cm;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  #exps h1 {
+    text-align: center;
+  }
+  #exps .exps {
+    padding-top: 0.5cm;
+  }
+  #exps .exps h2 {
+    height: 30px;
+  }
+  #exps .exps .exp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #exps .exps .exp .content h2 {
+    text-indent: 10px;
+  }
+  #exps .exps .exp .content p {
+    margin: 10px;
+    text-indent: 5px;
+  }
+  #exps .exps .exp .content ul {
+    position: relative;
+    left: -39px;
+  }
+  #loisirs {
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 10.5cm;
+    height: 3.7cm;
+    left: 0cm;
+    top: 26cm;
   }
 }
 /*# sourceMappingURL=main_style.css.map */

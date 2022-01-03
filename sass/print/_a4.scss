@@ -1,0 +1,244 @@
+@media print {
+    body {
+        position:   fixed;
+        top:        0mm;
+        left:       0mm;
+        width:      210mm;
+        height:     297mm;
+        margin:     0mm 0mm 0mm 0mm;
+        padding:    20mm 20mm 20mm 20mm;
+        border:     solid green 1px;
+        outline:    solid black 1px;
+    }
+    header {
+        display:none;
+    }
+    // main {
+    //     background-color: yellow;
+    //     #profil
+    //     {
+    //         background-color: green;
+    //         .profil {
+    //             background-color: red;
+
+    //         }
+    //     }
+    // }
+
+
+
+    .profil {
+        #avatar {
+            display:block;
+            background-color: white;
+            width:5cm;
+            height:5cm;
+            position:absolute;
+            top:0;
+            left:0;
+            img{
+                margin:0.5cm;
+                width:4cm;
+                border-radius: 50%;
+            }
+            
+        }
+        #entete {
+            padding:0.3cm;
+            display:block;
+            background-color: white;
+            width:16cm;
+            height:5cm;
+            position:absolute;
+            top:0;
+            left:5cm;
+            
+            text-align:center;
+            
+            #profil_name {
+                font-size: 30pt;
+            }
+            .profil_title{
+                p{
+                    font-size: 25pt;
+                }
+            } 
+        }
+        #profil_data {
+            display:block;
+            background-color: white;
+            position:absolute;
+            top:5cm;
+            left:0;
+            width:10.5cm;
+            height:8cm;
+            padding:0.5cm;
+            #pres {
+                h2 {
+                    margin-top:0.5cm;
+                    margin-bottom: 0.5cm;
+                    margin-block-start:0;
+                    text-align:center;
+                }
+                p {
+                    text-indent: 20pt;
+                    font-size: 15pt;
+                }
+            }
+            #profil_infos {
+                padding-top: 0.3cm;;
+                display:flex;
+                flex-direction:column;
+                font-size: 14pt;
+                div {
+                    i {
+                        width:1cm;
+                        text-align: center;
+                    }
+                    p {
+                        display:inline-block;
+                    }
+                }
+            }
+            
+        }
+    }
+    #technos {
+        background-color: white;
+        display:block;
+        position:absolute;
+        width:10.5cm;
+        height:8cm;
+        left:10.5cm;
+        top:5cm;
+        padding-top:0.5cm;
+        padding-bottom:0.5cm;
+        h2 {
+            text-align:center;
+        }
+        .technos {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap:wrap;
+            h2 {
+                display:block;
+            }
+            .techno {
+                margin:5px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    height:30px;
+                }
+                
+                width:80px;
+                // height:80px;
+                img{
+                    margin:auto;
+                    width:60px;
+                    height:60px;
+                    
+                }
+            }
+        }
+    }
+
+    #formation {
+        background-color: white;
+        display:block;
+        position:absolute;
+        width:10.5cm;
+        height:13cm;
+        left:0;
+        top:13cm;
+        display:flex;
+        flex-direction: column;
+        //width:100%;
+        margin-bottom: 30px;
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            height:30px;
+        }
+        .formations{
+            padding-top:0.5cm;
+            .formation {
+                display:flex;
+                .content {
+                    h2 {
+                        text-indent:10px;
+                    }
+                    p {
+                        margin:10px;
+                        // text-indent: 5px;
+                    }
+                    ul {
+                        position:relative;
+                        left:-36px;
+                    }
+                }
+            }
+        }
+
+    }
+    #exps {
+        background-color: white;
+        //display:block;
+        position:absolute;
+        width:10.5cm;
+        height:13cm;
+        left:10.5cm;
+        top:13cm;
+        display:flex;
+        flex-direction: column;
+        //width:100%;
+        
+        margin-bottom: 30px;
+        // margin-left:10%;
+        h1 {
+            text-align: center;
+        }
+        .exps{
+            padding-top:0.5cm;
+
+            h2 {
+                height:30px;
+                // background-color: blue;
+        
+            }
+            .exp {
+                
+                display:flex;
+        
+                .content {
+                    h2 {
+                        text-indent:10px;
+                    }
+                    p {
+                        margin:10px;
+                        text-indent: 5px;
+                    }
+                    ul {
+                        position:relative;
+                        left:-39px;
+                    }
+                }
+            }
+    
+        }
+    }
+    #loisirs {
+        background-color: white;
+        display:block;
+        position:absolute;
+        width:10.5cm;
+        height:3.7cm;
+        left:0cm;
+        top:26cm;
+    }
+}

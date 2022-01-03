@@ -106,7 +106,7 @@ module.exports = function(grunt) {
             'links':sections_links
         }
         let header_html = grunt.template.process(header_file,{data:header_data});
-        header_html += '        <main>\n'
+        //header_html += '        <main>\n'
         grunt.file.write('src/html/build/_header.html',header_html,{encoding:'UTF-8'});
         for (var i=0;i<structure_data.build.sections.length;i++){
             let current = structure_data.build.sections[i];
