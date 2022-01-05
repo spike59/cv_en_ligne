@@ -261,6 +261,8 @@ body {
   margin: 7px;
   border-radius: 50%;
   background-color: red;
+  -webkit-box-shadow: inset 0 0 0 1000px red;
+          box-shadow: inset 0 0 0 1000px red;
   position: relative;
   z-index: 2;
 }
@@ -271,6 +273,8 @@ body {
   width: 5px;
   margin: auto;
   background-color: black;
+  -webkit-box-shadow: inset 0 0 0 1000px black;
+          box-shadow: inset 0 0 0 1000px black;
   display: block;
   position: relative;
   top: -20px;
