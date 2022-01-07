@@ -3,10 +3,10 @@
         position:   fixed;
         top:        0mm;
         left:       0mm;
-        width:      210mm;
-        height:     297mm;
+        width:      190mm;
+        height:     277mm;
         margin:     0mm 0mm 0mm 0mm;
-        padding:    20mm 20mm 20mm 20mm;
+        /*padding:    20mm 20mm 20mm 20mm;*/
         border:     solid green 1px;
         outline:    solid black 1px;
     }
@@ -30,15 +30,15 @@
     .profil {
         #avatar {
             display:block;
-            background-color: white;
-            width:5cm;
-            height:5cm;
+            background-color: rgb(175, 69, 158);
+            width:4cm;
+            height:4cm;
             position:absolute;
             top:0;
             left:0;
             img{
                 margin:0.5cm;
-                width:4cm;
+                width:3cm;
                 border-radius: 50%;
             }
             
@@ -46,12 +46,12 @@
         #entete {
             padding:0.3cm;
             display:block;
-            background-color: white;
-            width:16cm;
-            height:5cm;
+            background-color: rgb(60, 72, 141);
+            width:15cm;
+            height:4cm;
             position:absolute;
             top:0;
-            left:5cm;
+            left:4cm;
             
             text-align:center;
             
@@ -66,11 +66,11 @@
         }
         #profil_data {
             display:block;
-            background-color: white;
+            background-color: rgb(59, 167, 59);
             position:absolute;
-            top:5cm;
+            top:4cm;
             left:0;
-            width:10.5cm;
+            width:9.5cm;
             height:8cm;
             padding:0.5cm;
             #pres {
@@ -104,13 +104,13 @@
         }
     }
     #technos {
-        background-color: white;
+        background-color: red;
         display:block;
         position:absolute;
-        width:10.5cm;
+        width:9.5cm;
         height:8cm;
-        left:10.5cm;
-        top:5cm;
+        left:9.5cm;
+        top:4cm;
         padding-top:0.5cm;
         padding-bottom:0.5cm;
         h2 {
@@ -148,13 +148,13 @@
     }
 
     #formation {
-        background-color: white;
+        background-color: rgb(226, 195, 21);
         display:block;
         position:absolute;
-        width:10.5cm;
-        height:13cm;
+        width:9.5cm;
+        height:12cm;
         left:0;
-        top:13cm;
+        top:12cm;
         display:flex;
         flex-direction: column;
         //width:100%;
@@ -187,13 +187,13 @@
 
     }
     #exps {
-        background-color: white;
+        background-color: rgb(41, 207, 207);
         //display:block;
         position:absolute;
-        width:10.5cm;
-        height:13cm;
-        left:10.5cm;
-        top:13cm;
+        width:9.5cm;
+        height:15.7cm;
+        left:9.5cm;
+        top:12cm;
         display:flex;
         flex-direction: column;
         //width:100%;
@@ -233,12 +233,12 @@
         }
     }
     #loisirs {
-        background-color: white;
+        background-color: rgb(13, 77, 23);
         display:block;
         position:absolute;
-        width:10.5cm;
+        width:9.5cm;
         height:3.7cm;
-        left:0cm;
-        top:26cm;
+        left:0;
+        top:24cm;
     }
 }

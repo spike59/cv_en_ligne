@@ -639,10 +639,10 @@ header h1 {
     position: fixed;
     top: 0mm;
     left: 0mm;
-    width: 210mm;
-    height: 297mm;
+    width: 190mm;
+    height: 277mm;
     margin: 0mm 0mm 0mm 0mm;
-    padding: 20mm 20mm 20mm 20mm;
+    /*padding:    20mm 20mm 20mm 20mm;*/
     border: solid green 1px;
     outline: solid black 1px;
   }
@@ -651,27 +651,27 @@ header h1 {
   }
   .profil #avatar {
     display: block;
-    background-color: white;
-    width: 5cm;
-    height: 5cm;
+    background-color: #af459e;
+    width: 4cm;
+    height: 4cm;
     position: absolute;
     top: 0;
     left: 0;
   }
   .profil #avatar img {
     margin: 0.5cm;
-    width: 4cm;
+    width: 3cm;
     border-radius: 50%;
   }
   .profil #entete {
     padding: 0.3cm;
     display: block;
-    background-color: white;
-    width: 16cm;
-    height: 5cm;
+    background-color: #3c488d;
+    width: 15cm;
+    height: 4cm;
     position: absolute;
     top: 0;
-    left: 5cm;
+    left: 4cm;
     text-align: center;
   }
   .profil #entete #profil_name {
@@ -682,11 +682,11 @@ header h1 {
   }
   .profil #profil_data {
     display: block;
-    background-color: white;
+    background-color: #3ba73b;
     position: absolute;
-    top: 5cm;
+    top: 4cm;
     left: 0;
-    width: 10.5cm;
+    width: 9.5cm;
     height: 8cm;
     padding: 0.5cm;
   }
@@ -720,13 +720,13 @@ header h1 {
     display: inline-block;
   }
   #technos {
-    background-color: white;
+    background-color: red;
     display: block;
     position: absolute;
-    width: 10.5cm;
+    width: 9.5cm;
     height: 8cm;
-    left: 10.5cm;
-    top: 5cm;
+    left: 9.5cm;
+    top: 4cm;
     padding-top: 0.5cm;
     padding-bottom: 0.5cm;
   }
@@ -777,13 +777,13 @@ header h1 {
     height: 60px;
   }
   #formation {
-    background-color: white;
+    background-color: #e2c315;
     display: block;
     position: absolute;
-    width: 10.5cm;
-    height: 13cm;
+    width: 9.5cm;
+    height: 12cm;
     left: 0;
-    top: 13cm;
+    top: 12cm;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -818,12 +818,12 @@ header h1 {
     left: -36px;
   }
   #exps {
-    background-color: white;
+    background-color: #29cfcf;
     position: absolute;
-    width: 10.5cm;
-    height: 13cm;
-    left: 10.5cm;
-    top: 13cm;
+    width: 9.5cm;
+    height: 15.7cm;
+    left: 9.5cm;
+    top: 12cm;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -859,13 +859,13 @@ header h1 {
     left: -39px;
   }
   #loisirs {
-    background-color: white;
+    background-color: #0d4d17;
     display: block;
     position: absolute;
-    width: 10.5cm;
+    width: 9.5cm;
     height: 3.7cm;
-    left: 0cm;
-    top: 26cm;
+    left: 0;
+    top: 24cm;
   }
 }
 /*# sourceMappingURL=main_style.css.map */
