@@ -71,3 +71,7 @@ node_modules/
 
 #fichiers temporaires de construction
 src/html/*
+#config vs code
+.vs/ProjectSettings.json
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
